@@ -1,0 +1,103 @@
+
+*{
+  font-family: arial;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.octodex {
+  width: 100%;
+}
+
+span {
+  color: #777;
+}
+
+div.image-footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*  octocat image  */
+ul.octodex img {
+  height: 350px;
+  width: 350px;
+  border-radius: 3px;
+  display: block;
+  border: solid #cacaca;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+  border-width: 1px;
+  line-height: 0px;
+}
+
+ul.authors, div.image-caption {
+  float: right;
+  position: relative;
+  margin-left: -30px;
+}
+
+/*  image caption  */
+ul.authors img {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  position: relative;
+  top: -5px;
+}
+
+div.image-caption span > a {
+  position: relative;
+  top: 8px;
+}
+
+div.image-footer {
+  border-bottom: 1px solid #cacaca;
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+div.image-caption {
+  position: relative;
+  top: 6px;
+}
+
+ul.author {
+  text-decoration: none;
+  display: inline;
+}
+
+/*  layout  */
+li.octocat {
+  display: inline-block;
+  margin-left: 20px;
+}
+span.image-number {
+  float: left;
+  margin: 5px 0;
+  color: #cacaca;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*  content  [triangles and # symbols]  */
+.image-number:before {
+  content: "#";
+}
+
+div.image-footer:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+  position: relative;
+  right: -330px;
+}
